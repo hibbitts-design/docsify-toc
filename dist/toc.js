@@ -1,10 +1,10 @@
 var defaultOptions = {
-  headings: 'h1, h2',
+  headings: 'h2,h3',
   scope: '.markdown-section',
 
   // To make work
-  title: 'Contents',
-  listType: 'ul',  
+  title: '',
+  listType: 'ul',
 }
 
 // Element builders
@@ -151,7 +151,7 @@ function plugin(hook, vm) {
 
 		var container = document.createElement('div');
 		container.setAttribute('class', 'page_toc');
-		
+
 		container.appendChild(title);
 		container.appendChild(toc);
 
